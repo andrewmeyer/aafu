@@ -6,8 +6,11 @@
     <a class="nav-menu-item" href="{{ `blog` | relURL }}">Blog</a>
   </div>
   <div>
-    <a class="mr-4" href="{{ `search` | relURL }}">
+    <a href="{{ `search` | relURL }}">
       <i class="fas fa-search"></i>
+    </a>
+    <a href="{{ `index.xml` | relURL }}" title="RSS Feed">
+      <i class="fa-solid fa-rss text-lg align-middle"></i>
     </a>
     <i
       class="fas fa-sun theme-toggle text-blue-500 hover:text-blue-700 dark:text-yellow-300 dark:hover:text-yellow-500 cursor-pointer text-lg mr-9 sm:mr-0"

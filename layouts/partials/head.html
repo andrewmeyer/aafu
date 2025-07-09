@@ -16,6 +16,9 @@
     href="//fonts.googleapis.com/css?family=Didact+Gothic%7CRoboto:400%7CRoboto+Mono"
   />
 
+  <!-- RSS discovery -->
+  <link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }} RSS Feed" href="{{ .Site.BaseURL }}index.xml" />
+
   <!-- Main CSS -->
   {{ $css := resources.Get "main.css" | css.TailwindCSS }}
   {{ if hugo.IsProduction }}
