@@ -96,4 +96,30 @@
       @apply my-0 p-2 hover:bg-gray-300 rounded-sm dark:hover:bg-darker;
     }
   }
+  table {
+    @apply w-full border-collapse border border-gray-300 dark:border-gray-600 text-left;
+    th, td {
+      @apply border border-gray-300 dark:border-gray-600 px-4 py-2;
+    }
+    th {
+      @apply bg-gray-200 dark:bg-dark font-semibold;
+    }
+    tbody tr:nth-child(even) {
+      @apply bg-gray-100 dark:bg-stone-800;
+    }
+  }
+  table td[style*="text-align:right"],
+  table th[style*="text-align:right"] {
+    @apply text-right;
+  }
+
+  table td[style*="text-align:center"],
+  table th[style*="text-align:center"] {
+    @apply text-center;
+  }
+
+  table td[style*="text-align:left"],
+  table th[style*="text-align:left"] {
+    @apply text-left;
+  }
 }
