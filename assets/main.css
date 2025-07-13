@@ -123,3 +123,36 @@
     @apply text-left;
   }
 }
+
+#TableOfContents a.active {
+  font-weight: bold;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  padding-left: 0;
+}
+
+#TableOfContents ul {
+  list-style: none;
+  padding-left: 1em;
+  margin: 0;
+}
+
+#TableOfContents ul ul {
+  padding-left: 1.25em;
+  border-left: 2px solid #ddd;
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+}
+
+#TableOfContents a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  padding: 0.2em 0;
+}
+
+#TableOfContents li {
+  margin: 0;
+}
